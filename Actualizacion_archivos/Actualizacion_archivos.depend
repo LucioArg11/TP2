@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1601658723 source:e:\escritorio\programacion\tps\tp2\actualizacion_archivos\actualizacion_archivos.c
+	"Actualizacion_archivos.h"
+
+1601786175 e:\escritorio\programacion\tps\tp2\actualizacion_archivos\actualizacion_archivos.h
+	<stdio.h>
+	<stdlib.h>
+
+1601786024 source:e:\escritorio\programacion\tps\tp2\actualizacion_archivos\main.c
+	"Actualizacion_archivos.h"
+
