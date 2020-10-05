@@ -128,4 +128,43 @@ int abrir_archivo(FILE **pf,const char* nombrefile,const char* modo,const char* 
     return 1;
 }
 
+int crear_archivo_nros()
+{
+    FILE *pf;
+    int i=abrir_archivo(&pf,"Numeros.txt","wt","Error apertura de archivo");
+    short int var=0;
+    int uno=0,siete=0,lineas=0;
 
+    if(i==0)
+        return 0;
+    fprintf(pf,"%6d %6d %6d %6d %6d %6d %6d\n",123456,123456,123456,123456,123456,123456,123456);
+    while(uno!=1 || siete!=1)
+    {
+        var=rand()%(8-1)+1;
+        for(i=0;i<var;i++)
+        {
+            fprintf(pf,"%6d ",(short int)rand());
+        }
+        fprintf(pf,"\n");
+        lineas++;
+        if(var==1)
+            uno=1;
+        if(var==7)
+            siete=1;
+    }
+    fclose(pf);
+    return lineas;
+}
+
+int resultado_cadenas()
+{
+    FILE *pf;
+    int i=abrir_archivo(&pf,"Numeros.txt","rt","Error apertura de archivo");
+    char nro[7];
+    fseek(pf,(long)(sizeof(nro)*7+2),1);
+    while(!feof(pf))
+    {
+        fscanf(pf,"%6s ",nro);
+    }
+
+}

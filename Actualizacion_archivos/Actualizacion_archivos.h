@@ -24,6 +24,8 @@ int carga_archivo();
 int lee_archivo();
 int actualiza_archivos();
 int abrir_archivo(FILE **pf,const char* nombrefile,const char* modo,const char* error);
+int crear_archivo_nros();
+int resultado_cadenas();
 
 
 #endif // ACTUALIZACION_ARCHIVOS_H_INCLUDED
