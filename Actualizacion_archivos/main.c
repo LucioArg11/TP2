@@ -7,6 +7,6 @@ int main()
 //    i=actualiza_archivos();
 //    i=lee_archivo();
     ///i=crear_archivo_nros();
-    resultado_cadenas();
+    i=crear_archivo_notas();
     return 0;
 }

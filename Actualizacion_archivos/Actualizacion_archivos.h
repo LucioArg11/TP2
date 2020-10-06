@@ -26,6 +26,12 @@ int actualiza_archivos();
 int abrir_archivo(FILE **pf,const char* nombrefile,const char* modo,const char* error);
 int crear_archivo_nros();
 int resultado_cadenas();
+int es_multiplo_5(char *v,int *cont);
+int es_multiplo_6(char *v,int *cont);
+int crear_archivo_notas();
+void cambio_de_pagina(FILE **pf);
+float promedio_notas(float m[][6],int cant);
+
 
 
 #endif // ACTUALIZACION_ARCHIVOS_H_INCLUDED
